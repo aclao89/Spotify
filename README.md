@@ -47,3 +47,22 @@ Log into your Spotify [developer account](https://developer.spotify.com/dashboar
 Once you create a new project in your dashboard, you can retrieve your 'Client ID' and 'Client Secret'. These will be used to generate an access token so we can pull data from Spotify API. ***Be sure not to share these credentials***
 
 I learned this step by the help of this post by [Steven Morse](https://stmorse.github.io/journal/spotify-api.html)
+
+
+Step 4: Using Spotify's API, we will generate a genre dataframe.
+
+Again, I followed the steps provided by Steven Morse.
+
+![step4](https://github.com/aclao89/Spotify/blob/main/Imgs/step4.PNG)
+
+We pulled the artist and genres associated with each track_uri in our library and added to a dictionary. For a comprehensive list of other data points that may be of interest to you, check out Spotify's [console](https://developer.spotify.com/console/).
+
+![step4_2](https://github.com/aclao89/Spotify/blob/main/Imgs/step4_2.PNG)
+
+We converted this dictionary to a dataframe and expanded it so each genre for each track/artist is in its own line via the explode() function.
+
+![step4_3](https://github.com/aclao89/Spotify/blob/main/Imgs/step4_3.PNG)
+
+![step4_4](https://github.com/aclao89/Spotify/blob/main/Imgs/step4_4.PNG)
+
+Last step was to save ***df_tab*** and ***df_genres*** to import into Tableau

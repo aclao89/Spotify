@@ -12,7 +12,30 @@ I have been a Spotify subscriber for over 10 years; I became curious of my music
 
 Tools used: Jupyter Notebook with data manipulation libraries and Tableau Public for data visualizations.
 
-### Step 1:
-Request your copy of Spotify data using this [link](https://www.spotify.com/us/account/privacy/). Scroll down to request your data and confirm the request via your email (registered with Spotify). It may take a while to receive your data; check your email for the download link.
+### Step 1: Request your Data
 
-### Step 2:
+Request your copy of Spotify data using this [link](https://www.spotify.com/us/account/privacy/). Scroll down to request your data and confirm the request via your email (registered with Spotify). It may take a while to receive your data (took about a week for me); check your email for the download link.
+
+![request_data](https://github.com/aclao89/Spotify/blob/main/Imgs/step1.PNG)
+
+### Step 2: Data Cleaning
+
+Once you received the files from Spotify, we will create one dataframe that includes all streaming data whether each song is on our library and each song's Spotify 'URI' - which is unique identifier.
+
+![create_stream](https://github.com/aclao89/Spotify/blob/main/Imgs/read_files.PNG)
+
+Here, I created an "Unique ID" by combining the artistName + trackName
+
+![merge](https://github.com/aclao89/Spotify/blob/main/Imgs/merge_dfs.PNG)
+
+Received an error when I tried to read in the 'YourLibrary1.json' file. I had to go in to manually delete the "albums" dictionary so it would be able to merge correctly with the "df_combined" dataframe.
+
+![read_lib](https://github.com/aclao89/Spotify/blob/main/Imgs/read_lib.PNG)
+
+Next, I created a 'track_uri' column which is the 'uri' column but stripped "spotify:track:".
+
+![uri](https://github.com/aclao89/Spotify/blob/main/Imgs/split_uri.PNG)
+
+Lastly, I merged the library and streaming dataframes
+
+![merged_last](https://github.com/aclao89/Spotify/blob/main/Imgs/merge_lib_stream.PNG)

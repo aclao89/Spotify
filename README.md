@@ -39,3 +39,11 @@ Next, I created a 'track_uri' column which is the 'uri' column but stripped "spo
 Lastly, I merged the library and streaming dataframes
 
 ![merged_last](https://github.com/aclao89/Spotify/blob/main/Imgs/merge_lib_stream.PNG)
+
+Step 3: Create New Spotify Project
+
+Log into your Spotify [developer account](https://developer.spotify.com/dashboard/login).
+
+Once you create a new project in your dashboard, you can retrieve your 'Client ID' and 'Client Secret'. These will be used to generate an access token so we can pull data from Spotify API. ***Be sure not to share these credentials***
+
+I learned this step by the help of this post by [Steven Morse](https://stmorse.github.io/journal/spotify-api.html)

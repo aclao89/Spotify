@@ -40,7 +40,7 @@ Lastly, I merged the library and streaming dataframes
 
 ![merged_last](https://github.com/aclao89/Spotify/blob/main/Imgs/merge_lib_stream.PNG)
 
-Step 3: Create New Spotify Project
+### Step 3: Create New Spotify Project
 
 Log into your Spotify [developer account](https://developer.spotify.com/dashboard/login).
 
@@ -110,4 +110,4 @@ There are a ton of interesting insights you can glean from analyzing your Spotif
 
 I had Cherelle - Saturday Love (Extended Version) on repeat! However, the extended version almost 9 minutes long. I am also a huge fan of rising Canadian Hip-Hop/R&B Duo, Manila Grey. To no surprise, most of my favorite genres cycle between electronic dance music (EDM) and hip-hop with sprinkles of pop sub-genres. My listening by hour occurs the most between 6-7 pm PST since that coincides with my gym schedule. Music pumps me up!
 
-Hope you enjoyed this analysis and good luck analyzing your own listening history!! 
+Hope you enjoyed this analysis and good luck analyzing your own listening history!!
